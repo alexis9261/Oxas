@@ -1,7 +1,7 @@
 <?php
-require 'app.oxas.tech/administracion/common/conexion.php';
+/*require 'app.oxas.tech/administracion/common/conexion.php';
 require "app.oxas.tech/administracion/precios/index.php";
-if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
+if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
 ?>
 ﻿<!DOCTYPE html>
 <html lang="es">
@@ -293,7 +293,11 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
           <div class="alert alert-secondary text-center" role="alert" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="150">
             Estadísticas de Visitas, Preguntas, Ventas y Tendencias
           </div>
-          <?php $sql="SELECT * FROM plan";
+          <div class="alert alert-primary text-center" role="alert" data-aos="zoom-out-down" data-aos-duration="3000" data-aos-offset="150">
+             <strong> 20$ Mensual - ¡Luego de los 30 días Gratis!</strong>
+          </div>
+          <?php 
+          /*$sql="SELECT * FROM plan";
           $r=$conn->query($sql);
           if($r->num_rows>0){
             while($row=$r->fetch_assoc()){
@@ -304,7 +308,7 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
                 <?php
               }
             }
-          }
+          }*/
           ?>
         </div>
       </div>
@@ -333,7 +337,7 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
           <div class="col-lg-4 mr-auto text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="40px" class="mb-3" viewBox="0 0 512 512"><path fill='#521a60' d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"/></svg>
             <p>
-              <a href="mailto:oxasvzla@gmail.com">oxasvzla@gmail.com</a>
+              <a href="mailto:oxasvzla@gmail.com">admin@oxas.tech</a>
             </p>
           </div>
         </div>
@@ -341,7 +345,7 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
     </section>
     <footer class="container-fluid bg-dark">
       <div class="row justify-content-center py-2">
-      <small class="text-white">Desarrollado por: <a href="http://eutuxia.org.ve" target='_blank'>Eutuxia Web</a> </samll>
+      <small class="text-white">Desarrollado por: <a href="https://oxas.tech/" target='_blank'>Oxas Tech</a> </samll>
       </div>
     </footer>
     <script>
