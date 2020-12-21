@@ -23,6 +23,24 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
     <link href="administracion/css/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+
+    <!-- imagen precargada -->
+    <link rel="preload" href="img/logo.png" as="image">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Oxas App - Ganadores Concurso Ideas 2019">
+    <meta name="description" content="Facilitamos la vida de los vendedores de Mercado Libre. Gestionamos ventas, preguntas, estadisticas y mucho más">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://app.oxas.tech/">
+    <meta property="og:title" content="Oxas App - Ganadores Concurso Ideas 2019">
+    <meta property="og:description" content="Facilitamos la vida de los vendedores de Mercado Libre. Gestionamos ventas, preguntas, estadisticas y mucho más">
+    <meta property="og:image" content="img/logo.png">
+
+    <!-- URL canonical -->
+    <link rel="canonical" href="https://app.oxas.tech/" />
+
     <style media="screen">
       .dropdown-item-icon {
         display: inline-block;
