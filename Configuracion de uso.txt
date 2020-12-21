@@ -1,0 +1,15 @@
+Direccion que se debe colocar en la Url de redireccion en el administrador de aplicaciones de mercado libre.
+Autenticación y seguridad
+Redirect URI *
+
+Para uso local(desarrollo)
+http://localhost/oxasapp/administracion/index.php
+
+Para produccion
+https://oxas.000webhostapp.com/administracion/index.php
+
+
+En el archivo configApp.php en la carpeta common de administracion
+
+Para uso local(desarrollo)
+$redirectURI='http://localhost/oxasapp/administracion/common/redirect.php';

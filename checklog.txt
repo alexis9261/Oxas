@@ -1,0 +1,49 @@
+vencimiento --> listo
+vendor principal--> Listo
+archivo en principal--> Listo
+scss -->Listo
+private -->Listo
+js --> listo
+img--> Listo
+css --> Listo
+
+** Administracion**
+main Files --> Listo
+commom
+  --> catchnofication --> listo
+  -->breakcrumb -->Listo
+  -->callback -->listo
+  -->conexion --> Listo
+  -->configApp --> listo
+  --> cron-vencimiento Listo
+  --> robot ->Listo
+  --> endsesion->Listo
+  --> footer -->Listo
+  --> footer2 -->listo
+  -->generales -->listo
+  -->index --Listo
+  -->meli --> listo
+  -->navbar & Navbar2 --> Listo
+  -->redirect, refresh, robot, take_at, vericar_dia -->Listo
+  *** comom --> Listo
+
+correos --> listo
+css --> listo
+estadisticas --> listo
+js -->Listo
+mercado --> Listo
+oxa-->listo
+postventa -->Listo
+preguntas-->Listo
+publicaciones-->Listo
+respuesta automatica
+  -->index --> Listo
+  -->Modifica -->listo
+  -->all --> listo
+  ***Respuesta automaticas --> Listo
+
+soporte -->listo
+suscripcion -->listo
+vendor --> listo
+tutoriales --> Listo
+ventas --> listo
