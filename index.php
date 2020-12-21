@@ -3,7 +3,7 @@
 require "app.oxas.tech/administracion/precios/index.php";
 if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
 ?>
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -25,7 +25,7 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
     <!-- imagen precargada -->
-    <link rel="preload" href="https://app.oxas.tech/img/logo.png" as="image">
+    <link rel="preload" href="img/logo.png" as="image">
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Oxas App - Ganadores Concurso Ideas 2019">
@@ -36,10 +36,10 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
     <meta property="og:url" content="https://app.oxas.tech/">
     <meta property="og:title" content="Oxas App - Ganadores Concurso Ideas 2019">
     <meta property="og:description" content="Facilitamos la vida de los vendedores de Mercado Libre. Gestionamos ventas, preguntas, estadisticas y mucho más">
-    <meta property="og:image" content="https://app.oxas.tech/img/logo.png">
+    <meta property="og:image" content="img/logo.png">
 
     <!-- URL canonical -->
-    <link rel="canonical" href="https://app.oxas.tech/" />
+    <link rel="canonical" href="https://app.oxas.tech/"/>
 
     <style media="screen">
       .dropdown-item-icon {
@@ -366,6 +366,7 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
       <small class="text-white">Desarrollado por: <a href="https://oxas.tech/" target='_blank'>Oxas Tech</a> </samll>
       </div>
     </footer>
+    <img src="img/logo.png" alt="">
     <script>
       window.onload = function() {
         var respuesta=<?php echo $respuesta_form;?>;
