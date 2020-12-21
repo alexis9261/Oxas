@@ -1,6 +1,6 @@
 <?php
-require '/administracion/common/conexion.php';
-require "/administracion/precios/index.php";
+require 'app.oxas.tech/administracion/common/conexion.php';
+require "app.oxas.tech/administracion/precios/index.php";
 if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}
 ?>
 ﻿<!DOCTYPE html>
