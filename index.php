@@ -366,7 +366,6 @@ if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
       <small class="text-white">Desarrollado por: <a href="https://oxas.tech/" target='_blank'>Oxas Tech</a> </samll>
       </div>
     </footer>
-    <img src="img/logo.png" alt="">
     <script>
       window.onload = function() {
         var respuesta=<?php echo $respuesta_form;?>;
