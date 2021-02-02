@@ -1,22 +1,19 @@
 <?php
 session_start();
 require 'meli.php';
-//include 'conexion.php';
-$conn = new mysqli("localhost","adminoxas","Adminoxas1.","oxa");
-if ($conn->connect_error){die("Connection failed: ".$conn->connect_error);}
+include 'conexion.php';
 include 'Funciones.php';
 $redirectURI="https://app.oxas.tech/administracion/common/redirect.php";
 $appId='1153047962046613';
 $secretKey='i3RGdgCvJXrKT1ceMNOHs4YLNHdgZ9Mj';
 date_default_timezone_set('America/Caracas');
-echo $hola_te_amo;
+
 $meli=new Meli($appId,$secretKey);
 if(@$_GET['code'] || @$_COOKIE['_validate']){// si existe un codigo(code), quiere decir que se esta registrando por 1 vez, si existe un validate quiere decir q ya se habia registrado antes
 if($_GET['code']){// If code exist and session is empty
-    print($_GET['code']);
     echo $hola_te_amo;
 $user=$meli->authorize($_GET['code'],$redirectURI);
-echo "<br>". $user;
+print($user);
 $AT=$user['body']->access_token;
 $RT=$user['body']->refresh_token;
 #Creacion de Cookies
