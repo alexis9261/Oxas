@@ -4,7 +4,7 @@ require 'meli.php';
 //include 'conexion.php';
 $conn = new mysqli("localhost","adminoxas","Adminoxas1.","oxa");
 if ($conn->connect_error){die("Connection failed: ".$conn->connect_error);}
-include 'https://app.oxas.tech/Oxa/Funciones.php';
+include 'Funciones.php';
 $redirectURI="https://app.oxas.tech/administracion/common/redirect.php";
 $appId='1153047962046613';
 $secretKey='i3RGdgCvJXrKT1ceMNOHs4YLNHdgZ9Mj';
