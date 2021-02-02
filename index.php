@@ -2,6 +2,9 @@
 /*require 'app.oxas.tech/administracion/common/conexion.php';
 require "app.oxas.tech/administracion/precios/index.php";
 if(isset($_GET['r'])){$respuesta_form=$_GET['r'];}*/
+
+$conn = new mysqli("localhost","adminoxas","Adminoxas1.","oxa");
+if ($conn->connect_error){die("Connection failed: ".$conn->connect_error);}
 ?>
 <!DOCTYPE html>
 <html lang="es">
