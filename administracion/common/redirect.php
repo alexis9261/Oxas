@@ -9,11 +9,13 @@ $redirectURI="https://app.oxas.tech/administracion/common/redirect.php";
 $appId='1153047962046613';
 $secretKey='i3RGdgCvJXrKT1ceMNOHs4YLNHdgZ9Mj';
 date_default_timezone_set('America/Caracas');
-print($_GET['code']);
+
 $meli=new Meli($appId,$secretKey);
 if(@$_GET['code'] || @$_COOKIE['_validate']){// si existe un codigo(code), quiere decir que se esta registrando por 1 vez, si existe un validate quiere decir q ya se habia registrado antes
 if($_GET['code']){// If code exist and session is empty
+    print($_GET['code']);
 $user=$meli->authorize($_GET['code'],$redirectURI);
+echo "<br>". $user;
 $AT=$user['body']->access_token;
 $RT=$user['body']->refresh_token;
 #Creacion de Cookies
