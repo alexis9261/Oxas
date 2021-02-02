@@ -11,11 +11,11 @@ date_default_timezone_set('America/Caracas');
 $meli=new Meli($appId,$secretKey);
 if(@$_GET['code'] || @$_COOKIE['_validate']){// si existe un codigo(code), quiere decir que se esta registrando por 1 vez, si existe un validate quiere decir q ya se habia registrado antes
 if($_GET['code']){// If code exist and session is empty
-    echo $hola_te_amo;
 $user=$meli->authorize($_GET['code'],$redirectURI);
 print($user);
 $AT=$user['body']->access_token;
 $RT=$user['body']->refresh_token;
+echo $AT;
 #Creacion de Cookies
 $duracion=time()+5*60*60; #Duracion de la COOKIE 6Hr
 $ruta="/";
@@ -30,6 +30,7 @@ $reply=json_decode($result);
 $telppal=@$reply->phone->area_code.$reply->phone->number;
 $telsecond=@$reply->alternative_phone->area_code.$reply->alternative_phone->number;
 $site_id=@$reply->site_id;
+echo $reply->id;
 #existe el usuario?
 if(userExist($reply->id,$reply->email)){
 #actualizar tokens
