@@ -1,4 +1,5 @@
 <?php
+$hola_te_amo="hola te amo";
 /*Decodificar - Modulo 1*/
 /*Funcion que devuelve la pregunta sin palabras repetidas, ni cracteres especiales*/
 function decodificador($string){
